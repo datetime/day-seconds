@@ -1,0 +1,41 @@
+{
+  "name": "day-seconds",
+  "version": "0.0.0",
+  "description": "Get the number of seconds/milliseconds in a day.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": "tunnckoCore/day-seconds",
+  "keywords": [
+    "day",
+    "seconds",
+    "milliseconds",
+    "date",
+    "number",
+    "count"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/tunnckoCore/day-seconds/blob/master/license.md"
+  }],
+  "author": {
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  },
+  "maintainers": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }],
+  "contributors": [{
+    "name": "Charlike Mike Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "http://www.whistle-bg.tk"
+  }]
+}
