@@ -7,8 +7,6 @@
 
 'use strict';
 
-var daySeconds = require('day-seconds');
-
 /**
  * Get the number of seconds/milliseconds in a day.
  *
