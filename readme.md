@@ -1,57 +1,88 @@
-# day-seconds [![NPM version][npmjs-img]][npmjs-url] [![Build Status][travis-img]][travis-url] [![Dependency Status][depstat-img]][depstat-url]
+## [![npm][npmjs-img]][npmjs-url] [![mit license][license-img]][license-url] [![build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url]
 
 > Get the number of seconds/milliseconds in a day.
 
-
-## Install [![Nodei.co stats][npmjs-install]][npmjs-url] 
-
-> Install with [npm](https://npmjs.org)
-
+## Install
 ```bash
-$ npm install day-seconds
+npm install day-seconds
+npm test
 ```
 
-# Usage
+
+## API
+> For more use-cases see the [tests](./test.js)
+
+### [daySeconds](./index.js#L35)
+> Get the number of seconds/milliseconds in a day.
+
+- `[bool]` **{Boolean}** when `true`, returns seconds, otherwise milliseconds
+- `return` **{Number}**
+
+**Example:**
+
 ```js
 var daySeconds = require('day-seconds');
 
-daySeconds()
-//=> 86400 seconds
+daySeconds(false);
+//=> 86400000
 
-daySeconds(true)
-//=> 86400000 milliseconds
+daySeconds();
+//=> 86400000
+
+daySeconds('str');
+//=> 86400000
+
+daySeconds([1,2,3]);
+//=> 86400000
+
+daySeconds(/regex/gm);
+//=> 86400000
+
+daySeconds({});
+//=> 86400000
+
+daySeconds(true);
+//=> 86400
 ```
 
 
-## Authors & Contributors [![author tips][author-gittip-img]][author-gittip]
+## Author
 **Charlike Mike Reagent**
-+ [gittip/tunnckoCore][author-gittip]
-+ [github/tunnckoCore][author-github]
++ [gratipay/tunnckoCore][author-gratipay]
 + [twitter/tunnckoCore][author-twitter]
++ [github/tunnckoCore][author-github]
 + [npmjs/tunnckoCore][author-npmjs]
++ [more ...][contrib-more]
 
 
 ## License [![MIT license][license-img]][license-url]
-Copyright (c) 2014 [Charlike Mike Reagent][author-website], [contributors](https://github.com/tunnckoCore/day-seconds/graphs/contributors).  
+Copyright (c) 2014-2015 [Charlike Mike Reagent][contrib-more], [contributors][contrib-graf].  
 Released under the [`MIT`][license-url] license.
 
+
 [npmjs-url]: http://npm.im/day-seconds
-[npmjs-img]: http://img.shields.io/npm/v/day-seconds.svg
-[npmjs-install]: https://nodei.co/npm/day-seconds.png?mini=true
+[npmjs-img]: https://img.shields.io/npm/v/day-seconds.svg?style=flat&label=day-seconds
 
-[license-url]: https://github.com/tunnckoCore/day-seconds/blob/master/license.md
-[license-img]: http://img.shields.io/badge/license-MIT-blue.svg
+[coveralls-url]: https://coveralls.io/r/datetime/day-seconds?branch=master
+[coveralls-img]: https://img.shields.io/coveralls/datetime/day-seconds.svg?style=flat
 
-[travis-url]: https://travis-ci.org/tunnckoCore/day-seconds
-[travis-img]: https://travis-ci.org/tunnckoCore/day-seconds.png?branch=master
+[license-url]: https://github.com/datetime/day-seconds/blob/master/license.md
+[license-img]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
 
-[depstat-url]: https://david-dm.org/tunnckoCore/day-seconds
-[depstat-img]: https://david-dm.org/tunnckoCore/day-seconds.png
+[travis-url]: https://travis-ci.org/datetime/day-seconds
+[travis-img]: https://img.shields.io/travis/datetime/day-seconds.svg?style=flat
 
-[author-gittip-img]: http://img.shields.io/gittip/tunnckoCore.svg
-[author-gittip]: https://www.gittip.com/tunnckoCore
-[author-github]: https://github.com/tunnckoCore
+[daviddm-url]: https://david-dm.org/datetime/day-seconds
+[daviddm-img]: https://img.shields.io/david/datetime/day-seconds.svg?style=flat
+
+[author-gratipay]: https://gratipay.com/tunnckoCore
 [author-twitter]: https://twitter.com/tunnckoCore
-
-[author-website]: http://www.whistle-bg.tk
+[author-github]: https://github.com/tunnckoCore
 [author-npmjs]: https://npmjs.org/~tunnckocore
+
+[contrib-more]: http://j.mp/1stW47C
+[contrib-graf]: https://github.com/datetime/day-seconds/graphs/contributors
+
+***
+
+_Powered and automated by [kdf](https://github.com/tunnckoCore), January 26, 2015_

@@ -2,40 +2,65 @@
   "name": "day-seconds",
   "version": "0.1.0",
   "description": "Get the number of seconds/milliseconds in a day.",
-  "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "lint": "jshint index.js && jscs index.js --reporter inline",
+    "test": "mocha",
+    "test-cov": "istanbul cover _mocha",
+    "test-travis": "istanbul cover _mocha --report lcovonly"
   },
-  "repository": "tunnckoCore/day-seconds",
+  "author": {
+    "name": "Charlike Make Reagent",
+    "email": "mameto_100@mail.bg",
+    "url": "https://github.com/tunnckoCore"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/datetime/day-seconds.git"
+  },
   "keywords": [
-    "day",
-    "seconds",
-    "milliseconds",
+    "calendar",
+    "count",
+    "counts",
+    "current",
     "date",
+    "dates",
+    "datetime",
+    "day",
+    "days",
+    "format",
+    "get",
+    "js",
+    "leap",
+    "millisecond",
+    "milliseconds",
+    "month",
+    "months",
+    "ms",
     "number",
-    "count"
+    "numbers",
+    "real",
+    "sec",
+    "seconds",
+    "secs",
+    "times",
+    "util",
+    "utilities",
+    "utility",
+    "utils",
+    "week",
+    "weekday",
+    "weeks",
+    "year",
+    "years"
   ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/datetime/day-seconds/blob/master/license.md"
+  },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "*"
-  },
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/tunnckoCore/day-seconds/blob/master/license.md"
-  }],
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  },
-  "maintainers": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }],
-  "contributors": [{
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "http://www.whistle-bg.tk"
-  }]
+    "istanbul-harmony": "^0.3.1",
+    "mocha": "*",
+    "mocha-lcov-reporter": "^0.0.1"
+  }
 }
