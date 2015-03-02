@@ -1,6 +1,6 @@
 {
   "name": "day-seconds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get the number of seconds/milliseconds in a day.",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",
